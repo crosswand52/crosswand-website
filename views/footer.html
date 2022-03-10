@@ -1,0 +1,46 @@
+<footer class="py-5 py-xl-10">
+  <div class="container">
+    <div class="row align-items-center g-1 g-lg-6 text-muted">
+      <div class="col-md-6 col-lg-4 text-center text-md-end order-lg-3">
+        <span class="small {{ footerClass }}">8605 Santa Monica Blvd, California USA 91578</span>
+      </div>
+      <div class="col-lg-3 order-lg-1 text-center text-md-start">
+        <p class="small {{ footerClass }}">Copyrights © 2022</p>
+      </div>
+      <div class="col-lg-3 order-lg-1 text-center text-md-start">
+        <p class="small {{ footerClass }}">Crosswand LLC</p>
+      </div>
+    </div>
+    <div class="d-flex mt-3 justify-content-end">
+      <div class="border px-2 rounded-pill">
+          <select
+            id="language-selector"
+            class="form-select form-select-sm border-0 bg-transparent {{ footerClass }}"
+            aria-label="Default select example"
+            value="{{ lang() }}"
+            onchange="changeLanguage(this)"
+          >
+            <option value="en" {{ "selected" if lang() == "en" else "" }}>English</option>
+            <option value="ko" {{ "selected" if lang() == "ko" else "" }}>한국어</option>
+          </select>
+      </div>
+    </div>
+  </div>
+</footer>
+
+{% block script %}
+<script>
+    const form = document.querySelector('#language-selector');
+    function changeLanguage() {
+        $.ajax({
+            type: 'post',
+            url: '/api/changeLanguage',
+            data: {lang: form.value},
+            dataType: 'JSON'
+        }).done(() => {
+            location.reload();
+        });
+    }
+    form.addEventListener('change', changeLanguage);
+</script>
+{% endblock %}

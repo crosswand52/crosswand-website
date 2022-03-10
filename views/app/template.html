@@ -1,0 +1,50 @@
+{% extends 'base.html' %} {% set navbarClass="navbar-dark" %} {% set
+bodyClass="bg-dark" %} {% set footerClass="text-white" %} {% block body %}
+<!-- split screen -->
+<section class="overflow-hidden inverted border-bottom">
+  <div class="py-20 d-flex flex-column container min-vh-100 foreground">
+    <div
+      class="row align-items-center justify-content-center justify-content-lg-between my-auto"
+    >
+      <div
+        class="col-lg-6 col-xl-5 text-center text-lg-start foreground mb-10 mb-lg-0"
+      >
+        <span class="badge bg-opaque-yellow text-white rounded-pill"
+          >{% block appName %}{% endblock %}</span
+        >
+        <h1 class="display-2 lh-sm text-white">
+          {% block mainDescription %}{% endblock %}
+        </h1>
+        <p class="lead text-black text-secondary my-4 fw-lg-75">
+          {% block subDescription %}{% endblock %}
+        </p>
+        <div class="row justify-content-center justify-content-lg-start g-1">
+          <div class="col-auto">
+            <a href="{{ appStoreLink }}" target="_blank" class="btn btn-red rounded-pill">
+              <img src="/images/logo/appstore.svg" alt="App Store" />
+            </a>
+          </div>
+          <div class="col-auto">
+            <a href="{{ playStoreLink }}" target="_blank" class="btn btn-red rounded-pill">
+              <img src="/images/logo/googleplay.svg" alt="Google play" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 position-relative">
+        <div class="card equal-2-1 equal-lg-1-1 overflow-visible level-1">
+          <div class="card-wrap">
+            <img
+              class="img-fluid"
+              src="{{ screenshotImage }}"
+              alt="Image"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

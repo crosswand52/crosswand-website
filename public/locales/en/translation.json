@@ -1,0 +1,22 @@
+{
+	"app.all": "all",
+	"app.android": "Android",
+	"app.app": "Apps",
+	"app.concerta": "Concerta",
+	"app.concertaHeading": "Recording app desgined for musicians",
+	"app.concertaLongDescription": "No more disorganized recordings!<br/>\nIn Concerta, you can organize all of your recordings (including video) by song, event, or whatever you want.<br/>\nYou can take note on every recording, keep track of your progress, and practice efficiently!",
+	"app.concertaShortDescription": "Practice your instrument properly",
+	"app.gongda": "GongDa",
+	"app.gongdaHeading": "Journal Sharing App",
+	"app.gongdaLongDescription": "GongDa is journal sharing app where you can write and share your diary with new people.<br/>\nCurrently, available only in South Korea.",
+	"app.gongdaShortDescription": "Share your journal with new people",
+	"app.heading": "Our Applications",
+	"app.ios": "iOS",
+	"home.discoverApp": "Discover Our Apps",
+	"home.feedbackSubtitle": "Feedback",
+	"home.feedbackTitle": "",
+	"home.mainTitle": "Elegant,<br/>but Simple",
+	"name.oneYoon": "One Yoon",
+	"name.travisCho": "Travis Cho",
+	"nav.clickMe": "Click me"
+}

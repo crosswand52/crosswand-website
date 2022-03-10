@@ -1,0 +1,22 @@
+{
+	"app.all": "전체",
+	"app.android": "안드로이드",
+	"app.app": "어플",
+	"app.concerta": "Concerta",
+	"app.concertaHeading": "예술인들을<br />위한 녹음앱",
+	"app.concertaLongDescription": "악기 연주를 정리해보세요!<br/>\nConcerta에서 모든 연주 녹음이나 영상을 노래, 행사, 아니면 아무거나 원하는 종류로 정리해 보세요.<br />\n각각 녹음본마다 노트할 수 있고, 점검하고, 연습을 체계적으로 하세요!",
+	"app.concertaShortDescription": "악기를 더욱 효과적으로 연습해보세요",
+	"app.gongda": "공다",
+	"app.gongdaHeading": "공유하는 다이어리",
+	"app.gongdaLongDescription": "공다 (공유하는 다이어리)는 일기 공유 앱으로써 새로운 사람들과 일기를 쓰고 공유할 수 있어요.",
+	"app.gongdaShortDescription": "새로운 사람들과 다이어리를 공유해보세요",
+	"app.heading": "우리의 앱들",
+	"app.ios": "iOS",
+	"home.discoverApp": "앱 구경하기",
+	"home.feedbackSubtitle": "피드백",
+	"home.feedbackTitle": "",
+	"home.mainTitle": "우아하지만,<br/>간단한",
+	"name.oneYoon": "윤지원",
+	"name.travisCho": "조재영",
+	"nav.clickMe": "클릭해보세요!"
+}

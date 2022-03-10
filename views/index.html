@@ -1,0 +1,78 @@
+{% extends 'base.html' %} {% set navbarClass="navbar-dark" %}{% block body %}
+<div class="offcanvas-wrap">
+  <div
+    data-center-top="@class:inverted bg-color-active;"
+    data-bottom-bottom="@class:inverted bg-color-active;"
+    data-edge-strategy="reset"
+  >
+    <span class="bg-color bg-black"></span>
+
+    <!-- hero -->
+    <section class="overflow-hidden bg-black inverted">
+      <div class="d-flex flex-column container py-20 min-vh-100 level-1">
+        <div
+          class="row align-items-center justify-content-center justify-content-lg-end my-auto"
+        >
+          <div class="col-md-8 col-lg-5 text-center text-lg-start">
+            <span class="badge bg-opaque-white text-white rounded-pill"
+              >Crosswand LLC</span
+            >
+            <h1 class="display-2 fw-bold lh-sm my-2 my-xl-4">
+              {{ __("home.mainTitle") | safe}}
+            </h1>
+            <a href="/app" class="btn btn-with-icon btn-yellow rounded-pill"
+              >{{ __("home.discoverApp") }} <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid back back-background">
+        <div class="row h-100">
+          <div class="col-lg-6" data-aos="fade-in">
+            <figure
+              class="background"
+              style="background-image: url('/images/main.jpg')"
+              data-top-top="transform: translateY(0%);"
+              data-top-bottom="transform: translateY(10%);"
+            ></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- team -->
+    <section class="py-15 py-xl-20 bg-light overflow-hidden">
+      <div class="container">
+        <div class="row mb-10">
+          <div class="col-lg-8">
+            <h2>{{ __("Our Team")}}</h2>
+          </div>
+        </div>
+        <div class="row g-3 g-xl-5">
+          <div class="col-6 col-md-6 col-lg-4">
+            <div class="card">
+              <div class="equal-1-1 mb-2">
+                <figure
+                  class="background"
+                  style="background-image: url('/images/users/travisCho.png')"
+                ></figure>
+              </div>
+              <h4 class="fs-5 mb-0">{{__("name.travisCho")}}</h4>
+              <span class="text-secondary">CEO</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4">
+            <div class="equal-1-1 mb-2">
+              <figure
+                class="background"
+                style="background-image: url('/images/users/default.png')"
+              ></figure>
+            </div>
+            <h4 class="fs-5 mb-0">{{__("name.oneYoon")}}</h4>
+            <span class="text-secondary">CMO</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  {% endblock %}
+</div>

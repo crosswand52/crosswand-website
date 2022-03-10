@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="/images/icon/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/index.bundle.css" />
+    <link rel="stylesheet" href="/css/libs.bundle.css" />
+
+    <!-- Meta Data -->
+    <meta property="og:url" content="https://www.crosswand.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Crosswand LLC" />
+    <meta
+      property="og:description"
+      content="Small Changes, Great Possibilities"
+    />
+    <meta property="og:image" content="https://www.crosswand.com/" />
+
+    <!-- Title -->
+    <title>Crosswand</title>
+  </head>
+
+  <body class="{{ bodyClass }}">
+    {% include 'navbar.html' %} 
+    {% block body %}{% endblock %} 
+    {% include 'footer.html' %}
+    <!-- javascript -->
+    <script src="/js/vendor.bundle.js"></script>
+    <script src="/js/index.bundle.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    {% block script %}{% endblock %}
+  </body>
+</html>

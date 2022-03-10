@@ -1,0 +1,72 @@
+{% extends 'base.html' %} 
+{% set navbarClass="navbar-light" %}
+{% block body %}
+<section class="py-15 py-xl-20">
+  <div class="container mt-5 mt-xl-10">
+    <div class="row mb-10 g-3 g-xl-5 align-items-end">
+      <div class="col-lg-8">
+        <h1 class="display-1">
+        {{__("app.heading")}}
+        </h1>
+      </div>
+    </div>
+    <div class="mb-5">
+      <button
+        class="btn btn-filter rounded-pill current"
+        data-filter="*"
+        data-target="#grid1"
+      >
+      {{__("app.all")}}
+      </button>
+      <button
+        class="btn btn-filter rounded-pill"
+        data-filter=".android"
+        data-target="#grid1"
+      >
+      {{__("app.android")}}
+      </button>
+      <button
+        class="btn btn-filter rounded-pill"
+        data-filter=".ios"
+        data-target="#grid1"
+      >
+      {{__("app.ios")}}
+      </button>
+    </div>
+    <div class="row mb-10 g-3 g-xl-5 gallery-1 text-white" id="grid1" data-isotope>
+      <div class="col-md-6 col-lg-4 android ios">
+        <a
+          href="/app/gongda"
+          class="card card-arrow card-hover-arrow equal-1-1 inverted"
+        >
+          <figure
+            class="background"
+            style="background-image: url('/images/app/gongda/logo.png')"
+          ></figure>
+          <div class="card-wrap">
+            <div class="card-footer mt-auto">
+              <h4 class="card-title">{{ __("app.gongda")}}</h4>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 android ios">
+        <a
+          href="/app/concerta"
+          class="card card-arrow card-hover-arrow equal-1-1 inverted"
+        >
+          <figure
+            class="background"
+            style="background-image: url('/images/app/concerta/logo.png')"
+          ></figure>
+          <div class="card-wrap">
+            <div class="card-footer mt-auto">
+              <h4 class="card-title">{{ __("app.concerta")}}</h4>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
